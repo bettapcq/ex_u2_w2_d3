@@ -1,5 +1,5 @@
-@use 'partials/colors';
-@use 'partials/font';
+// @use 'colors';
+// @use 'font';
 
 $spacings-map: (
   sm: 0.5em,
@@ -40,12 +40,13 @@ nav {
   width: 100%;
   ul {
     display: flex;
-    flex-direction: column;
+    justify-content: end;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     list-style-type: none;
     text-align: center;
     li {
+        margin: 0.5em;
       font-family: $my-font;
       a {
         text-decoration: none;
@@ -56,5 +57,5 @@ nav {
 }
 
 main {
-    display: flex;
+  display: flex;
 }

@@ -173,6 +173,12 @@ table {
   background-color: #4caf50;
 }
 
+.float {
+  border-radius: 15px;
+  box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.33);
+  border: solid 1px grey;
+}
+
 .text-sm {
   font-size: 12px;
 }
@@ -193,6 +199,11 @@ h1.main-title {
   font-size: 30px;
   font-weight: bold;
   font-family: Arial;
+}
+
+body {
+  font-family: Arial;
+  color: #f4f4f4;
 }
 
 .padding-block-sm {
@@ -337,4 +348,84 @@ h1.main-title {
 
 .margin-inline-xxl {
   margin-inline: 3em;
+}
+
+nav {
+  display: block;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0.5em;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  margin: 0.5em;
+  font-family: Arial;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+main {
+  display: flex;
+}
+
+.text-primary {
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background-color: #f4f4f4;
+}
+
+.text-secondary {
+  color: #640fc5;
+}
+
+.bg-secondary {
+  background-color: #640fc5;
+}
+
+.text-info {
+  color: #0e6cff;
+}
+
+.bg-info {
+  background-color: #0e6cff;
+}
+
+.text-login {
+  color: #ff8700;
+}
+
+.bg-login {
+  background-color: #ff8700;
+}
+
+.text-contacts {
+  color: #4caf50;
+}
+
+.bg-contacts {
+  background-color: #4caf50;
+}
+
+.float {
+  border-radius: 15px;
+  box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.33);
+  border: solid 1px grey;
+}
+
+button {
+  padding: 1em;
+  border: solid 1px black;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
