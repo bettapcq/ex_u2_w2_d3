@@ -173,10 +173,18 @@ table {
   background-color: #4caf50;
 }
 
+.light-border {
+  border: #fff9f9 1px solid;
+}
+
 .float {
   border-radius: 15px;
   box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.33);
   border: solid 1px grey;
+}
+
+.get-space {
+  justify-content: space-between;
 }
 
 .text-sm {
@@ -196,9 +204,10 @@ table {
 }
 
 h1.main-title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   font-family: Arial;
+  color: black;
 }
 
 body {
@@ -350,6 +359,30 @@ body {
   margin-inline: 3em;
 }
 
+.flex-column {
+  flex: column;
+}
+
+.flex-row {
+  flex: row;
+}
+
+.block-column {
+  block: column;
+}
+
+.block-row {
+  block: row;
+}
+
+.inline-column {
+  inline: column;
+}
+
+.inline-row {
+  inline: row;
+}
+
 nav {
   display: block;
   width: 100%;
@@ -375,57 +408,12 @@ main {
   display: flex;
 }
 
-.text-primary {
-  color: #f4f4f4;
-}
-
-.bg-primary {
-  background-color: #f4f4f4;
-}
-
-.text-secondary {
-  color: #640fc5;
-}
-
-.bg-secondary {
-  background-color: #640fc5;
-}
-
-.text-info {
-  color: #0e6cff;
-}
-
-.bg-info {
-  background-color: #0e6cff;
-}
-
-.text-login {
-  color: #ff8700;
-}
-
-.bg-login {
-  background-color: #ff8700;
-}
-
-.text-contacts {
-  color: #4caf50;
-}
-
-.bg-contacts {
-  background-color: #4caf50;
-}
-
-.float {
-  border-radius: 15px;
-  box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.33);
-  border: solid 1px grey;
+.flex {
+  display: flex;
 }
 
 button {
   padding: 1em;
   border: solid 1px black;
   border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=style.css.map */

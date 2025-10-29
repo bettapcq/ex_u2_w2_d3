@@ -1,9 +1,10 @@
 @mixin main-title {
   font: {
-    size: 30px;
+    size: 40px;
     weight: bold;
     family: $my-font;
   }
+  color: black;
 }
 
 @mixin centered {
@@ -21,3 +22,12 @@
 .float {
   @include floating();
 }
+
+@mixin to-space {
+  justify-content: space-between;
+}
+
+.get-space {
+  @include to-space();
+}
+

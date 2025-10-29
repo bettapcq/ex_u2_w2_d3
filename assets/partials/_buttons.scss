@@ -1,5 +1,3 @@
-@use 'colors';
-@use 'mixins';
 
 @mixin buttons-styles() {
   padding: 1em;
@@ -9,5 +7,4 @@
 
 button {
   @include buttons-styles();
-  @include centered;
 }
