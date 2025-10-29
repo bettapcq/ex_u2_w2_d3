@@ -1,8 +1,10 @@
+@use 'partials/font';
+
 @mixin main-title {
   font: {
     size: 30px;
     weight: bold;
-    family: $my-font;
+    family: font.$my-font;
   }
 }
 
