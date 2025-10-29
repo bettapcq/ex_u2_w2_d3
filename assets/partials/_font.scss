@@ -1,0 +1,33 @@
+@use 'partials/colors';
+
+$my-font: Arial;
+
+$sizes-map: (
+  sm: 12px,
+  md: 16px,
+  lg: 20px,
+  xl: 25px,
+);
+
+@each $name, $value in $sizes-map {
+  .text-#{$name} {
+    font-size: $value;
+  }
+}
+
+@mixin main-title {
+  font: {
+    size: 30px;
+    weight: bold;
+    family: $my-font;
+  }
+}
+
+h1.main-title {
+  @include main-title();
+}
+
+body {
+  font-family: $my-font;
+  color: $primary;
+}

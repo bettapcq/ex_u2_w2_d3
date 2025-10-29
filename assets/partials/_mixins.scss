@@ -1,0 +1,15 @@
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin floating {
+  border-radius: 15px;
+  box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.33);
+  border: solid 1px grey;
+}
+
+.float {
+  @include floating();
+}

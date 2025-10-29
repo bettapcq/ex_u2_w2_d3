@@ -1,0 +1,56 @@
+@use 'partials/colors';
+@use 'partials/font';
+
+$spacings-map: (
+  sm: 0.5em,
+  normal: 1em,
+  md: 1.5em,
+  lg: 2em,
+  xl: 2.5em,
+  xxl: 3em,
+);
+
+@each $name, $value in $spacings-map {
+  .padding-block-#{$name} {
+    padding-block: #{$value};
+  }
+
+  .margin-block-#{$name} {
+    margin-block: #{$value};
+  }
+}
+
+$displays-map: (
+  padding-block: padding-block,
+  padding-inline: padding-inline,
+  margin-block: margin-block,
+  margin-inline: margin-inline,
+);
+
+@each $d-name, $d-value in $displays-map {
+  @each $s-name, $s-value in $spacings-map {
+    .#{$d-name}-#{$s-name} {
+      #{$d-value}: #{$s-value};
+    }
+  }
+}
+
+nav {
+  display: block;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    li {
+      font-family: $my-font;
+      a {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+  }
+}
